@@ -1,3 +1,21 @@
+@use './blocks/button';
+@use './blocks/stars';
+@use './blocks/price';
+@use './blocks/review';
+@use './blocks/code';
+@use './blocks/name';
+@use './blocks/imgcard';
+@use './blocks/card';
+@use './blocks/header.scss';
+@use './blocks/container.scss';
+@use './utils/variables.scss' as *;
+
 body {
   margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Roboto, sans-serif;
+  display: flex;
 }

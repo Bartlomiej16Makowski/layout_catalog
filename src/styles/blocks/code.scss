@@ -1,0 +1,12 @@
+@use '../utils/variables.scss' as *;
+
+.card__code {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 400;
+  align-self: flex-start;
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: $secondary;
+  padding: 0 16px;
+}

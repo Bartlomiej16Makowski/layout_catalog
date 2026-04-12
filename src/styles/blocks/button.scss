@@ -1,0 +1,23 @@
+@use '../utils/variables.scss' as *;
+
+.card__button {
+  background-color: $main-color;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 70px;
+  border-radius: 5px;
+  color: $white;
+  margin-top: 14px;
+  text-decoration: none;
+
+  &--color {
+    &:hover {
+      background-color: #fff;
+      color: #00acdc;
+      border: 1px solid $main-color;
+    }
+  }
+}

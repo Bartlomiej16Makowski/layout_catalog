@@ -1,0 +1,18 @@
+@use '../utils/variables.scss' as *;
+
+.card__review {
+  margin-top: 16px;
+  display: flex;
+  align-items: end;
+  gap: 19px;
+  justify-content: space-between;
+
+  &-count {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0;
+    color: $main-accent;
+  }
+}
