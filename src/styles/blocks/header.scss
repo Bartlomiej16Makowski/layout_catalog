@@ -57,6 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: transform color 0.3s ease;
 }
 
 .is-active {
