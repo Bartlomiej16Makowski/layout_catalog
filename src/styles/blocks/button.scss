@@ -7,8 +7,11 @@
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 12px 70px;
+  padding: 12px 69px;
+  height: 40px;
+  width: 166px;
   border-radius: 5px;
+  border: 1px solid transparent;
   color: $white;
   margin-top: 16px;
   text-decoration: none;
@@ -17,7 +20,7 @@
   &--color {
     &:hover {
       background-color: $white;
-      transform: color $main-color;
+      color: $main-color;
       border: 1px solid $main-color;
     }
   }
