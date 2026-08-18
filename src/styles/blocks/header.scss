@@ -5,87 +5,24 @@
   --accent: #00acdc;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.nav {
+.header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-}
 
-.pic {
-  display: inline-block;
-}
+  &__pic {
+    display: inline-block;
+  }
 
-.nav__list {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 0;
-}
-
-.nav__item {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.logo {
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: black;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav__links {
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: $main-accent;
-  height: var(--main-height);
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: transform color 0.3s ease;
-}
-
-.is-active {
-  color: var(--accent);
-}
-
-.is-active::after {
-  content: '';
-  position: absolute;
-  width: 36px;
-  height: 4px;
-  background-color: var(--accent);
-  bottom: 0;
-}
-
-.nav__links:hover {
-  color: $main-color;
-  text-decoration-color: var(--accent);
-}
-
-.nav__item:first-child {
-  margin-left: 0;
-}
-
-[data-qa='hover']:hover {
-  text-decoration: none;
-  color: var(--accent);
+  &__logo {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
 }
