@@ -1,19 +1,19 @@
 @use '/src/styles/utils/variables.scss' as *;
 
 .nav {
-  .nav__list {
+  &__list {
     display: flex;
     text-align: center;
     align-items: center;
     padding: 0;
   }
 
-  .nav__item {
+  &__item {
     display: inline-block;
     margin-left: 20px;
   }
 
-  .nav__links {
+  &__link {
     display: flex;
     text-decoration: none;
     text-align: center;
@@ -23,7 +23,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: transform color 0.3s ease;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $main-color;
+      text-decoration-color: var(--accent);
+    }
   }
 
   .is-active {
@@ -39,17 +44,12 @@
     bottom: 0;
   }
 
-  .nav__links:hover {
-    color: $main-color;
-    text-decoration-color: var(--accent);
-  }
-
   .nav__item:first-child {
     margin-left: 0;
   }
 
-  [data-qa='hover']:hover {
-    text-decoration: none;
-    color: var(--accent);
-  }
+  // [data-qa='hover']:hover {
+  //   text-decoration: none;
+  //   color: var(--accent);
+  // }
 }
